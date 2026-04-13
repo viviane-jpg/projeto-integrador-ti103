@@ -13,7 +13,7 @@
 </head>
 
 <body>
-     <nav class="navbar" role="navigation">
+    <nav class="navbar" role="navigation">
         <div class="navbar-brand">
             <a href="index.html" class="navbar-item">
                 <span class="logo">₿</span>
@@ -80,6 +80,45 @@
 
         </div>
     </section>
+
+    <div class="jogo">
+
+    <div class="slot-container">
+        <div class="slot" id="slot1">❓</div>
+        <div class="slot" id="slot2">❓</div>
+        <div class="slot" id="slot3">❓</div>
+    </div>
+
+    <button onclick="spin()">Girar</button>
+
+    <div class="result" id="result"></div>
+
+    <script>
+        const symbols = ["🐯", "🍒", "💎", "🍋", "⭐"];
+
+        function spin() {
+            const s1 = symbols[Math.floor(Math.random() * symbols.length)];
+            const s2 = symbols[Math.floor(Math.random() * symbols.length)];
+            const s3 = symbols[Math.floor(Math.random() * symbols.length)];
+
+            document.getElementById("slot1").textContent = s1;
+            document.getElementById("slot2").textContent = s2;
+            document.getElementById("slot3").textContent = s3;
+
+            const result = document.getElementById("result");
+
+            if (s1 === s2 && s2 === s3) {
+                result.textContent = "🔥 JACKPOT! Você ganhou!";
+            } else if (s1 === s2 || s2 === s3 || s1 === s3) {
+                result.textContent = "✨ Quase! Dois iguais!";
+            } else {
+                result.textContent = "😢 Tente novamente!";
+            }
+        }
+    </script>
+    
+    </div>
+
 
 </body>
 
