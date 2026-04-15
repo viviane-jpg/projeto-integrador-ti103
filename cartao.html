@@ -1,89 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
-      <title>TI103</title>
+    <title>Cartão | TI103</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bulma -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <!-- css -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/cartao.css">
-
 </head>
-
 <body>
-    <nav class="navbar" role="navigation">
-        <div class="navbar-brand">
-            <a href="index.html" class="navbar-item">
-                <span class="logo">₿</span>
-                <strong>PROJETO TI03</strong>
-                <p>TESTE GABRIEL</p>
-            </a>
 
-            <a role="button" class="navbar-burger" data-target="menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
+<!-- NAVBAR -->
+<nav class="navbar" role="navigation">
+    <div class="navbar-brand">
+        <a href="index.html" class="navbar-item">
+            <span class="logo">₿</span>
+            <strong>PROJETO TI03</strong>
+        </a>
+        <a role="button" class="navbar-burger" data-target="menu">
+            <span></span><span></span><span></span>
+        </a>
+    </div>
+    <div id="menu" class="navbar-menu">
+        <div class="navbar-start">
+            <a href="apostas.html" class="navbar-item">Apostas</a>
+            <a href="cartao.html" class="navbar-item">Cartão</a>
+            <a href="consumoDigital.html" class="navbar-item">Consumo Digital</a>
+            <a href="investimentos.html" class="navbar-item">Investimentos</a>
         </div>
-
-        <div id="menu" class="navbar-menu">
-
-            <div class="navbar-start">
-                <a href="apostas.html" class="navbar">Apostas</a>
-                <a href="cartao.html" class="navbar">Cartão</a>
-                <a href="consumoDigital.html" class="navbar">Consumo Digital</a>
-                <a href="investimentos.html" class="navbar">Investimentos</a>
+        <div class="navbar-end">
+            <a class="navbar-item">Entrar</a>
+            <div class="navbar-item">
+                <button class="button btn-cadastrar">Cadastrar</button>
             </div>
+        </div>
+    </div>
+</nav>
 
-            <div class="navbar-end">
-                <a class="navbar">Entrar</a>
+<section class="section">
+    <div class="container">
 
-                <div class="navbar-item">
-                    <button class="button btn-cadastrar">
-                        Cadastrar
-                    </button>
+        <!-- HERO + SIDEBAR -->
+        <div class="columns">
+            <!-- HERO -->
+            <div class="column">
+                <div class="featured-card big">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df" alt="Cartão">
+                    <div class="overlay">
+                        <span class="tag hero-tag">CARTÃO</span>
+                        <h2>Os melhores cartões de crédito em 2026</h2>
+                        <p>Compare benefícios, cashback e anuidade.</p>
+                    </div>
                 </div>
             </div>
 
+            <!-- SIDEBAR -->
+            <div class="column is-4">
+                <div class="sidebar">
+                    <h3>🔥 MAIS LIDAS</h3>
+                    <div class="rank-item"><span>01</span> Como sair das dívidas rápido</div>
+                    <div class="rank-item"><span>02</span> Melhores bancos digitais</div>
+                    <div class="rank-item"><span>03</span> Score baixo? Veja como subir</div>
+                    <div class="rank-item"><span>04</span> Cartões aprovados na hora</div>
+                </div>
+
+                <div class="sidebar mt-5">
+                    <h3>💡 DICAS RÁPIDAS</h3>
+                    <p>✔ Pague sempre o total da fatura</p>
+                    <p>✔ Evite parcelamentos longos</p>
+                    <p>✔ Use até 30% do limite</p>
+                </div>
+            </div>
         </div>
-    </nav>
 
+        <!-- ÚLTIMAS NOTÍCIAS + ANÁLISES (MAIS PARA CIMA) -->
+        <div class="columns ultimas-noticias">
+            <!-- ÚLTIMAS NOTÍCIAS -->
+            <div class="column is-8">
+                <h3 class="section-title">Últimas notícias</h3>
 
+                <div class="article">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3" alt="">
+                    <div class="article-content">
+                        <span class="tag">DICAS</span>
+                        <h3>Como aumentar o limite do cartão</h3>
+                        <p>Aprenda como os bancos analisam seu perfil.</p>
+                    </div>
+                </div>
 
-    <section class="section">
-        <div class="container post-container">
+                <div class="article">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" alt="">
+                    <div class="article-content">
+                        <span class="tag">SEGURANÇA</span>
+                        <h3>Golpes com cartão em 2026</h3>
+                        <p>Veja como se proteger das novas fraudes.</p>
+                    </div>
+                </div>
 
-
-            <span class="tag">Cartão</span>
-
-
-            <h1 class="post-title">TITULO 1</h1>
-
-
-            <p class="post-meta">Por Admin • 10 Abril 2026 • 5 min de leitura</p>
-
-
-            <img class="post-image" src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc"
-                alt="Apostas online">
-
-
-            <div class="post-content">
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque, laborum velit! Neque cumque, nobis temporibus eius facilis
-                    odio modi ducimus dolorum illo iure cupiditate pariatur, dolor autem doloremque.
-                    Labore, blanditiis!
-                </p>
-
+                <div class="article">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" alt="">
+                    <div class="article-content">
+                        <span class="tag">ALERTA</span>
+                        <h3>Erros comuns no cartão</h3>
+                        <p>Evite dívidas com essas dicas simples.</p>
+                    </div>
+                </div>
             </div>
 
+            <!-- ANÁLISES -->
+            <div class="column is-4">
+                <h3 class="section-title">Análises</h3>
+
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5" alt="">
+                    <div class="content">
+                        <span class="tag">ANÁLISE</span>
+                        <h3>Cartão sem anuidade vale a pena?</h3>
+                    </div>
+                </div>
+
+                <div class="news-card mt-4">
+                    <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d" alt="">
+                    <div class="content">
+                        <span class="tag">ECONOMIA</span>
+                        <h3>Cashback vs milhas</h3>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>PROJETO TI03 © 2026 - Conteúdo educativo financeiro</p>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const burgers = document.querySelectorAll('.navbar-burger');
+        burgers.forEach(el => {
+            el.addEventListener('click', () => {
+                const target = document.getElementById(el.dataset.target);
+                el.classList.toggle('is-active');
+                target.classList.toggle('is-active');
+            });
+        });
+    });
+</script>
 
 </body>
-
 </html>
