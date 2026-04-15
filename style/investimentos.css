@@ -14,11 +14,11 @@
   margin-bottom: 2rem;
 }
 .post-image {
-  width: 100%;
+  width: 50%;
   border-radius: 12px;
   margin-bottom: 2rem;
 }
-.post-content p {
+.post-content p , ul {
   margin-bottom: 1.2rem;
   line-height: 1.7;
   color: #ddd;
