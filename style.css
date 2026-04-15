@@ -11,14 +11,14 @@
     --glass: rgba(255,255,255,0.05);
     --glass-hover: rgba(255,255,255,0.08);
 }
- 
+
 /* ================= RESET & BASE ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 body {
     font-family: 'Inter', sans-serif;
     background: radial-gradient(circle at top, var(--bg-secondary), var(--bg-primary) 70%);
@@ -26,11 +26,11 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
- 
+
 .container {
     max-width: 1200px;
 }
- 
+
 /* ================= ANIMAÇÕES GLOBAIS ================= */
 @keyframes fadeInUp {
     from {
@@ -42,40 +42,40 @@ body {
         transform: translateY(0);
     }
 }
- 
+
 @keyframes scaleIn {
     from { transform: scale(0.95); opacity: 0; }
     to   { transform: scale(1); opacity: 1; }
 }
- 
+
 /* ================= NAVBAR ================= */
 .navbar {
     background: var(--bg-primary) !important;
     padding: 0.8rem 1.5rem;
     box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
- 
+
 .logo {
     color: var(--accent);
     font-size: 1.8rem;
     transition: transform 0.3s ease;
 }
- 
+
 .logo:hover {
     transform: rotate(15deg) scale(1.1);
 }
- 
+
 .navbar-item {
     color: var(--text) !important;
     transition: all 0.3s ease;
     position: relative;
 }
- 
+
 .navbar-item:hover {
     color: var(--accent) !important;
     transform: translateY(-2px);
 }
- 
+
 .navbar-item:after {
     content: '';
     position: absolute;
@@ -86,12 +86,12 @@ body {
     background: var(--accent);
     transition: all 0.3s ease;
 }
- 
+
 .navbar-item:hover:after {
     width: 100%;
     left: 0;
 }
- 
+
 .btn-cadastrar {
     background: var(--accent);
     color: var(--bg-primary);
@@ -101,17 +101,17 @@ body {
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 209, 255, 0.3);
 }
- 
+
 .btn-cadastrar:hover {
     background: var(--accent-hover);
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 8px 25px rgba(0, 209, 255, 0.4);
 }
- 
+
 .btn-cadastrar:active {
     transform: scale(0.95);
 }
- 
+
 /* ================= HERO ================= */
 .featured-card {
     position: relative;
@@ -121,23 +121,23 @@ body {
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     animation: scaleIn 0.8s ease forwards;
 }
- 
+
 .featured-card:hover {
     transform: translateY(-12px);
     box-shadow: 0 25px 60px rgba(0, 209, 255, 0.25);
 }
- 
+
 .featured-card img {
     width: 100%;
     height: 420px;
     object-fit: cover;
     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
- 
+
 .featured-card:hover img {
     transform: scale(1.12);
 }
- 
+
 .overlay {
     position: absolute;
     bottom: 0;
@@ -147,18 +147,18 @@ body {
     background: linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.3));
     transition: all 0.4s ease;
 }
- 
+
 .featured-card:hover .overlay {
     padding-bottom: 2.8rem;
 }
- 
+
 /* ================= TÍTULOS E CARDS ================= */
 .section-title {
     font-size: 1.5rem;
     font-weight: 700;
     animation: fadeInUp 0.8s ease forwards;
 }
- 
+
 .card-glass,
 .news-item,
 .analysis-card,
@@ -197,7 +197,7 @@ body {
     color: var(--accent);
     width: 34px;
   }
- 
+
 .card-glass:hover,
 .news-item:hover,
 .analysis-card:hover,
@@ -206,21 +206,21 @@ body {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
- 
+
 /* ================= NEWS HORIZONTAL ================= */
 .news-horizontal {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
 }
- 
+
 .news-item {
     display: flex;
     gap: 1.5rem;
     padding: 1.5rem;
     cursor: pointer;
 }
- 
+
 .news-item img {
     width: 180px;
     height: 120px;
@@ -228,20 +228,20 @@ body {
     border-radius: 12px;
     transition: transform 0.4s ease;
 }
- 
+
 .news-item:hover img {
     transform: scale(1.08);
 }
- 
+
 .news-item h4 {
     color: var(--gold);
     transition: color 0.3s ease;
 }
- 
+
 .news-item:hover h4 {
     color: var(--gold-light);
 }
- 
+
 /* ================= TAGS ================= */
 /* ================= TAGS ================= */
 .tag {
@@ -255,7 +255,7 @@ body {
     transition: all 0.3s ease;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
- 
+
 /* Tag do HERO - "CARTÃO" (agora no estilo amarelo forte como a DICAS) */
 .hero-tag {
     background: #c6b946 !important;     /* Amarelo forte */
@@ -265,26 +265,26 @@ body {
     padding: 7px 18px;
     box-shadow: 0 4px 12px rgba(255, 208, 0, 0.4);
 }
- 
+
 .hero-tag:hover {
     background: #ffea4d !important;
     transform: scale(1.05);
 }
- 
+
 /* Tags normais (DICAS, SEGURANÇA, ALERTA, ANÁLISE, etc) - mantidas douradas */
 .tag {
     background: var(--gold);           /* #c6b946 */
     color: #000 !important;
     box-shadow: 0 2px 8px rgba(198, 185, 70, 0.4);
 }
- 
+
 .tag:hover {
     background: var(--gold-light);     /* #ffd000 */
     color: #0A2540 !important;
     transform: scale(1.06);
 }
- 
- 
+
+
 /* ================= SIDEBAR ================= */
 .sidebar-box ul li {
     padding: 10px 0;
@@ -294,12 +294,12 @@ body {
     transition: all 0.3s ease;
     padding-left: 10px;
 }
- 
+
 .sidebar-box ul li:hover {
     color: var(--accent);
     padding-left: 20px;
 }
- 
+
 .sidebar-box ul li:before {
     content: '→';
     position: absolute;
@@ -307,37 +307,37 @@ body {
     opacity: 0;
     transition: all 0.3s ease;
 }
- 
+
 .sidebar-box ul li:hover:before {
     opacity: 1;
     left: 5px;
 }
- 
+
 /* ================= ANALYSIS CARD ================= */
 .analysis-card {
     overflow: hidden;
 }
- 
+
 .analysis-card img {
     width: 100%;
     height: 220px;
     object-fit: cover;
     transition: transform 0.6s ease;
 }
- 
+
 .analysis-card:hover img {
     transform: scale(1.1);
 }
- 
+
 .analysis-content {
     padding: 1.5rem;
 }
- 
+
 .analysis-content h4 {
     color: var(--gold);
     margin-bottom: 0.75rem;
 }
- 
+
 /* ================= RESPONSIVO ================= */
 @media (max-width: 768px) {
     .news-item {
@@ -351,7 +351,7 @@ body {
         height: 280px;
     }
 }
- 
+
 /* Remove fundo indesejado do Bulma */
 .navbar-item:hover,
 .navbar-item.is-active,

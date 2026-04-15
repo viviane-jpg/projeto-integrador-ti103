@@ -7,120 +7,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bulma -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <!-- css -->
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="style/style.css">
-
 </head>
 
 <body>
-
+    <!-- NAVBAR -->
     <nav class="navbar" role="navigation">
         <div class="navbar-brand">
             <a href="index.html" class="navbar-item">
                 <span class="logo">₿</span>
-                <strong>PROJETO TI103</strong>
-                <p> TESTE - VIVIANE</p>
+                <strong>PROJETO TI03</strong>
             </a>
-
             <a role="button" class="navbar-burger" data-target="menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </a>
         </div>
-
         <div id="menu" class="navbar-menu">
-
             <div class="navbar-start">
-                <a href="apostas.html" class="navbar">Apostas</a>
-                <a href="cartao.html" class="navbar">Cartão</a>
-                <a href="consumoDigital.html" class="navbar">Consumo Digital</a>
-                <a href="investimentos.html" class="navbar">Investimentos</a>
+                <a href="apostas.html" class="navbar-item">Apostas</a>
+                <a href="cartao.html" class="navbar-item">Cartão</a>
+                <a href="consumoDigital.html" class="navbar-item">Consumo Digital</a>
+                <a href="investimentos.html" class="navbar-item">Investimentos</a>
             </div>
-
             <div class="navbar-end">
-                <a class="navbar" href="login.html" >Entrar</a>
-
+                <a class="navbar-item">Entrar</a>
                 <div class="navbar-item">
-                    <button class="button btn-cadastrar" >
-                        <a href="cadastro.html">Cadastrar</a>
-                    </button>
+                    <button class="button btn-cadastrar">Cadastrar</button>
                 </div>
             </div>
-
         </div>
-    </nav>  
-
-
-
-
+    </nav>
+    <!-- CONTEÚDO -->
     <section class="section">
         <div class="container">
-
-
-            <div id="articles">
-                <div class="article">
-                    <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc" alt="Apostas">
-
-                    <div class="article-content">
-                        <span class="tag">Apostas</span>
-                        <p class="article-title">TITULO 1</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Debitis beatae dicta, saepe sint blanditiis est in praesentium quasi
-                            et officia aliquid officiis amet eius ullam! Magni facilis sint modi
-                            eaque.
-                        </p>
+            <div class="columns">
+                <!-- COLUNA PRINCIPAL -->
+                <div class="column is-8">
+                    <!-- HERO -->
+                    <div class="featured-card">
+                        <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc">
+                        <div class="overlay">
+                            <span class="tag hero-tag">Apostas</span>
+                            <h2>Apostas online: risco silencioso para sua vida financeira</h2>
+                            <p>
+                                O crescimento das apostas digitais trouxe facilidade, mas também riscos elevados.
+                                Sem controle, elas podem gerar dívidas, vício e perda de patrimônio. Entenda
+                                como identificar sinais de risco e proteger seu dinheiro.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ÚLTIMAS NOTÍCIAS -->
+                    <h3 class="section-title mt-6">Últimas notícias</h3>
+                    <div class="news-horizontal">
+                        <div class="news-item">
+                            <img src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5">
+                            <div>
+                                <span class="tag hero-tag">CARTÃO</span>
+                                <h4>Cartão de crédito: como usar sem cair em dívidas</h4>
+                                <p>
+                                    O cartão pode ser um grande aliado quando bem utilizado. Aprenda a controlar
+                                    limites, evitar juros abusivos e usar o crédito de forma estratégica no dia a dia.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+                            <div>
+                                <span class="tag hero-tag">Consumo Digital</span>
+                                <h4>Consumo digital: o perigo dos pequenos gastos invisíveis</h4>
+                                <p>
+                                    Assinaturas, compras impulsivas e serviços online acumulam sem você perceber.
+                                    Descubra como identificar esses gastos e manter seu controle financeiro.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
-                <div class="article">
-                    <img src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5" alt="Cartão">
-
-                    <div class="article-content">
-                        <span class="tag">Cartão</span>
-                        <p class="article-title">TITULO 2</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Debitis beatae dicta, saepe sint blanditiis est in praesentium quasi
-                            et officia aliquid officiis amet eius ullam! Magni facilis sint modi
-                            eaque.
-                        </p>
+                <!-- SIDEBAR -->
+                <!-- SIDEBAR -->
+                <div class="column is-4">
+                    <div class="sidebar">
+                        <h3> MAIS LIDAS</h3>
+                        <div class="rank-item"><span>01</span> Como sair das dívidas rápido</div>
+                        <div class="rank-item"><span>02</span> Melhores bancos digitais</div>
+                        <div class="rank-item"><span>03</span> Score baixo? Veja como subir</div>
+                        <div class="rank-item"><span>04</span> Cartões aprovados na hora</div>
+                    </div>
+    
+                    <!-- CARTÃO DE INVESTIMENTOS CORRIGIDO -->
+                    <div class="analysis-card card-glass mt-5">
+                        <img src="https://images.unsplash.com/photo-1569025690938-a00729c9e1f9" alt="Investimentos">
+                        <div class="analysis-content p-5">
+                            <span class="tag hero-tag">Investimentos</span>
+                            <h4>Investimentos: comece mesmo com pouco dinheiro</h4>
+                            <p>
+                                Não é preciso muito para começar. Com planejamento e disciplina, você pode
+                                construir patrimônio e alcançar estabilidade financeira a longo prazo.
+                            </p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="article">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Consumo Digital">
-
-                    <div class="article-content">
-                        <span class="tag">Consumo Digital</span>
-                        <p class="article-title">TITULO 3</p>
-                        <p>
-                            Compras rápidas e sem planejamento podem comprometer seu orçamento...
-                        </p>
-                    </div>
-                </div>
-
-
-                <div class="article">
-                    <img src="https://images.unsplash.com/photo-1569025690938-a00729c9e1f9" alt="Investimentos">
-
-                    <div class="article-content">
-                        <span class="tag">Investimentos</span>
-                        <p class="article-title">TITULO 4</p>
-                        <p>
-                            Investir é um passo importante para garantir estabilidade financeira...
-                        </p>
-                    </div>
-
-                </div>
-
             </div>
-
         </div>
     </section>
 
+    <!-- SCRIPT MENU MOBILE -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            burgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const menu = document.getElementById(target);
+
+                    el.classList.toggle('is-active');
+                    menu.classList.toggle('is-active');
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
