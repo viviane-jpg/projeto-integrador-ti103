@@ -21,10 +21,24 @@
 .post-content p , ul {
   margin-bottom: 1.2rem;
   line-height: 1.7;
-  color: #ddd;
+  color: #000000;
 }
 .post-content h2 {
   color: grey;
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: #0a2540;
+  color: #f6f9fc;
+  padding: 15px 30px; /* aumenta o "gordura" */
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px; /* texto maior */
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #425466;
 }
