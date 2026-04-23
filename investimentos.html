@@ -59,33 +59,116 @@
             <span class="tag">Investimentos</span>
 
 
-            <h1 class="post-title">O que é investimentos?</h1>
+            <div class="container">
+                <div class="columns is-vcentered">
 
+                    <!-- Imagem -->
+                    <div class="column is-5">
+                        <figure class="image">
+                            <img class="post-image"
+                                src="https://www.suno.com.br/wp-content/uploads/2021/04/fundos-de-investimento.jpeg"
+                                alt="Investimentos" style="border-radius: 12px;">
+                        </figure>
+                    </div>
 
-            <p class="post-meta">Por Admin • 10 Abril 2026 • 5 min de leitura</p>
+                    <!-- Conteúdo -->
+                    <div class="column is-7 has-text-black">
 
+                        <h1 class="title">O que é investimentos?</h1>
 
-            <img class="post-image"
-                src="https://www.suno.com.br/wp-content/uploads/2021/04/fundos-de-investimento.jpeg"
-                alt="Apostas online">
+                        <p class="is-size-7 has-text-grey">
+                            Por Admin • 10 Abril 2026 • 5 min de leitura
+                        </p>
 
-            <div class="post-content">
+                        <div class="content mt-4">
+                            <p>
+                                Investir é, basicamente, emprestar o seu dinheiro ao banco para receber os juros pelo
+                                dinheiro emprestado...
+                                O investimento deve fazer parte do seu planejamento financeiro e atender aos seus
+                                objetivos de vida.
+                            </p>
 
-                <p>
-                    ​Investir é, basicamente, emprestar o seu dinheiro ao banco para receber os juros pelo dinheiro
-                    emprestado. Ou, ainda, aplicar o seu dinheiro em um negócio que vai render lucros. Mas seu objetivo
-                    em investir não precisa ser apenas para guardar dinheiro pensando no futuro ou acumular riqueza. O
-                    investimento deve fazer parte do seu planejamento financeiro e atender aos seus objetivos de vida.
+                            <p>
+                                Você pode querer investir por vários motivos: para garantir uma reserva para
+                                emergências, para ter uma aposentadoria mais tranquila...
+                            </p>
+                        </div>
 
-                    Você pode querer investir por vários motivos: para garantir uma reserva para emergências, para ter
-                    uma aposentadoria mais tranquila e até mesmo para realizar aquela viagem que você deseja há algum
-                    tempo. Para realizar sonhos, é preciso economizar, poupar. Os investimentos são grandes aliados na
-                    hora de fazer o seu dinheiro poupado render juros.
+                        <a href="https://www.caixa.gov.br/investimentos/Paginas/default.aspx"
+                            class="button is-link is-medium is-rounded mt-3" style="background-color:#0A2540;">
+                            Leia a matéria completa →
+                        </a>
 
+                    </div>
 
-                </p>
-
+                </div>
             </div>
+
+            <section class="section">
+                <div class="container">
+                    <h1 class="title">Simulador de Investimentos</h1>
+
+                    <div class="box">
+                        <div class="field">
+                            <label class="label">Valor inicial (R$)</label>
+                            <div class="control">
+                                <input id="valorInicial" class="input" type="number" placeholder="Ex: 1000">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Aporte mensal (R$)</label>
+                            <div class="control">
+                                <input id="aporte" class="input" type="number" placeholder="Ex: 200">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Taxa de juros (% ao mês)</label>
+                            <div class="control">
+                                <input id="taxa" class="input" type="number" step="0.01" placeholder="Ex: 1">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Período (meses)</label>
+                            <div class="control">
+                                <input id="tempo" class="input" type="number" placeholder="Ex: 24">
+                            </div>
+                        </div>
+
+                        <div class="control">
+                            <button class="button custom-button is-rounded" onclick="simular()">
+                                Calcular
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <h2 class="subtitle">Resultado</h2>
+                        <p id="resultado">Preencha os dados e clique em calcular.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <script>
+                function simular() {
+                    const valorInicial = parseFloat(document.getElementById('valorInicial').value) || 0;
+                    const aporte = parseFloat(document.getElementById('aporte').value) || 0;
+                    const taxa = (parseFloat(document.getElementById('taxa').value) || 0) / 100;
+                    const tempo = parseInt(document.getElementById('tempo').value) || 0;
+
+                    let montante = valorInicial;
+
+                    for (let i = 0; i < tempo; i++) {
+                        montante = (montante + aporte) * (1 + taxa);
+                    }
+
+                    document.getElementById('resultado').innerHTML =
+                        `<strong>Valor final:</strong> R$ ${montante.toFixed(2)}`;
+                }
+            </script>
 
         </div>
     </section>

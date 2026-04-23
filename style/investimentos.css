@@ -28,3 +28,15 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+.box {
+  border-radius: 16px;
+}
+.button.is-link {
+  background-color: #0A2540;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-link:hover {
+  background-color: #083050;
+}
