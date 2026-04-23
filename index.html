@@ -5,27 +5,42 @@
     <meta charset="UTF-8">
     <title>TI103</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Bulma -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
     <!-- Fonte -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style/style.css">
+
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
 
+    <!-- NAVBAR CORRIGIDA -->
     <nav class="navbar" role="navigation">
         <div class="navbar-brand">
             <a href="index.html" class="navbar-item">
                 <span class="logo">₿</span>
                 <strong>PROJETO TI103</strong>
-                <p> TESTE - VIVIANE</p>
+                <p style="margin-left:8px;">TESTE - VIVIANE</p>
             </a>
+
             <a role="button" class="navbar-burger" data-target="menu">
-                <span></span><span></span><span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </a>
         </div>
+
         <div id="menu" class="navbar-menu">
             <div class="navbar-start">
                 <a href="apostas.html" class="navbar-item">Apostas</a>
@@ -33,60 +48,65 @@
                 <a href="consumoDigital.html" class="navbar-item">Consumo Digital</a>
                 <a href="investimentos.html" class="navbar-item">Investimentos</a>
             </div>
-            <div class="navbar-end">
 
-                </div>
-            </div>
+            <div class="navbar-end"></div>
         </div>
+    </nav>
 
+    <!-- CONTEÚDO -->
     <section class="section">
         <div class="container">
             <div class="columns">
+
                 <!-- COLUNA PRINCIPAL -->
                 <div class="column is-8">
+
                     <!-- HERO -->
                     <div class="featured-card">
-                        <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc">
+                        <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=800">
                         <div class="overlay">
                             <span class="tag hero-tag">Apostas</span>
                             <h2>Apostas online: risco silencioso para sua vida financeira</h2>
                             <p>
                                 O crescimento das apostas digitais trouxe facilidade, mas também riscos elevados.
-                                Sem controle, elas podem gerar dívidas, vício e perda de patrimônio. Entenda
-                                como identificar sinais de risco e proteger seu dinheiro.
+                                Sem controle, elas podem gerar dívidas, vício e perda de patrimônio.
                             </p>
                         </div>
                     </div>
+
                     <!-- ÚLTIMAS NOTÍCIAS -->
                     <h3 class="section-title mt-6">Últimas notícias</h3>
+
                     <div class="news-horizontal">
+
                         <div class="news-item">
-                            <img src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5">
+                            <img src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=400">
                             <div>
                                 <span class="tag hero-tag">CARTÃO</span>
                                 <h4>Cartão de crédito: como usar sem cair em dívidas</h4>
                                 <p>
-                                    O cartão pode ser um grande aliado quando bem utilizado. Aprenda a controlar
-                                    limites, evitar juros abusivos e usar o crédito de forma estratégica no dia a dia.
+                                    Aprenda a controlar limites, evitar juros abusivos e usar o crédito com estratégia.
                                 </p>
                             </div>
                         </div>
+
                         <div class="news-item">
-                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400">
                             <div>
                                 <span class="tag hero-tag">Consumo Digital</span>
                                 <h4>Consumo digital: o perigo dos pequenos gastos invisíveis</h4>
                                 <p>
-                                    Assinaturas, compras impulsivas e serviços online acumulam sem você perceber.
-                                    Descubra como identificar esses gastos e manter seu controle financeiro.
+                                    Assinaturas e compras online acumulam sem você perceber. Veja como controlar.
                                 </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
-                <!-- SIDEBAR -->
+
                 <!-- SIDEBAR -->
                 <div class="column is-4">
+
                     <div class="sidebar">
                         <h3>🔥 MAIS LIDAS</h3>
                         <div class="rank-item"><span>01</span> Como sair das dívidas rápido</div>
@@ -94,20 +114,21 @@
                         <div class="rank-item"><span>03</span> Score baixo? Veja como subir</div>
                         <div class="rank-item"><span>04</span> Cartões aprovados na hora</div>
                     </div>
-    
-                    <!-- CARTÃO DE INVESTIMENTOS CORRIGIDO -->
+
+                    <!-- CARD INVESTIMENTOS -->
                     <div class="analysis-card card-glass mt-5">
-                        <img src="https://images.unsplash.com/photo-1569025690938-a00729c9e1f9" alt="Investimentos">
+                        <img src="https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?w=600" alt="Investimentos">
                         <div class="analysis-content p-5">
                             <span class="tag hero-tag">Investimentos</span>
                             <h4>Investimentos: comece mesmo com pouco dinheiro</h4>
                             <p>
-                                Não é preciso muito para começar. Com planejamento e disciplina, você pode
-                                construir patrimônio e alcançar estabilidade financeira a longo prazo.
+                                Com planejamento e disciplina, você pode construir patrimônio no longo prazo.
                             </p>
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </div>
     </section>
@@ -115,7 +136,7 @@
     <!-- SCRIPT MENU MOBILE -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const burgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            const burgers = document.querySelectorAll('.navbar-burger');
 
             burgers.forEach(el => {
                 el.addEventListener('click', () => {
@@ -128,6 +149,6 @@
             });
         });
     </script>
-</body>
 
+</body>
 </html>
