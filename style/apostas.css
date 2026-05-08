@@ -1,3 +1,4 @@
+ 
 /*artigo */
 .post-container {
   max-width: 800px;
@@ -14,7 +15,7 @@
   margin-bottom: 2rem;
 }
 .post-image {
-  width: 100%;
+  width: 50%;
   border-radius: 12px;
   margin-bottom: 2rem;
 }
@@ -27,4 +28,38 @@
   color: grey;
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+ 
+.card-equal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+ 
+.card-equal:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+ 
+.box {
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.3);
+  background-color: rgba(0, 208, 255, 0.082);
+}
+ 
+.link {
+  border-radius: 20px;
+}
+ 
+.section {
+  border-radius: 20px;
+}
+ 
+.div.container {
+  background-color: rgba(0, 208, 255, 0.082);
+}
+ 
+strong {
+  color: #48cae4;
 }
