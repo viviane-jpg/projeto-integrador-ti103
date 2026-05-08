@@ -20,7 +20,7 @@
 }
  
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: radial-gradient(circle at top, var(--bg-secondary), var(--bg-primary) 70%);
     color: white;
     min-height: 100vh;
@@ -29,6 +29,9 @@ body {
  
 .container {
     max-width: 1200px;
+}
+p{
+    color: white;
 }
  
 /* ================= ANIMAÇÕES GLOBAIS ================= */
