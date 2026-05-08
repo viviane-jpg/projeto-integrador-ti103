@@ -28,3 +28,79 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+/*artigo */
+.post-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.post-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1rem;
+}
+.post-meta {
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+.post-image {
+  width: 50%;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+.post-content p {
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+  color: #070404;
+}
+.post-content h2 {
+  color: rgb(0, 0, 0);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.navbar-item {
+  color: var(--text) !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-item:hover {
+  color: var(--accent) !important;
+  transform: translateY(-2px);
+}
+
+.navbar-item:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: var(--accent);
+  transition: all 0.3s ease;
+}
+
+.navbar-item:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.btn-cadastrar {
+  background: var(--accent);
+  color: var(--bg-primary);
+  border-radius: 50px;
+  font-weight: 700;
+  padding: 10px 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 209, 255, 0.3);
+}
+
+.btn-cadastrar:hover {
+  background: var(--accent-hover);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 209, 255, 0.4);
+}
+
+.btn-cadastrar:active {
+  transform: scale(0.95);
+}

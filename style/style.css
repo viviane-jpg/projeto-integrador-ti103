@@ -359,3 +359,8 @@ body {
     background-color: transparent !important;
     color: var(--accent) !important;
 }
+.post-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
