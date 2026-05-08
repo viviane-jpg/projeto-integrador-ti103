@@ -11,6 +11,7 @@
 </head>
 <body>
 
+    <!-- NAVBAR -->
     <nav class="navbar" role="navigation">
         <div class="navbar-brand">
             <a href="index.html" class="navbar-item">
@@ -36,6 +37,8 @@
             </div>
         </div>
     </nav>
+
+
 <section class="section">
     <div class="container">
 
@@ -117,19 +120,5 @@
 <div class="footer">
     <p>PROJETO TI03 © 2026 - Conteúdo educativo financeiro</p>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const burgers = document.querySelectorAll('.navbar-burger');
-        burgers.forEach(el => {
-            el.addEventListener('click', () => {
-                const target = document.getElementById(el.dataset.target);
-                el.classList.toggle('is-active');
-                target.classList.toggle('is-active');
-            });
-        });
-    });
-</script>
-
 </body>
 </html>
