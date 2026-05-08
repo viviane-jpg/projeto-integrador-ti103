@@ -63,12 +63,10 @@
   transition: all 0.3s ease;
   position: relative;
 }
-
 .navbar-item:hover {
   color: var(--accent) !important;
   transform: translateY(-2px);
 }
-
 .navbar-item:after {
   content: '';
   position: absolute;
@@ -79,12 +77,10 @@
   background: var(--accent);
   transition: all 0.3s ease;
 }
-
 .navbar-item:hover:after {
   width: 100%;
   left: 0;
 }
-
 .btn-cadastrar {
   background: var(--accent);
   color: var(--bg-primary);
@@ -103,4 +99,8 @@
 
 .btn-cadastrar:active {
   transform: scale(0.95);
+}
+
+#resultado{
+  color:black;
 }
