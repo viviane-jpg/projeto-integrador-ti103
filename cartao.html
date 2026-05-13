@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Cartão | TI103</title>
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/cartao.css">
 </head>
+
 <body>
 
     <!-- NAVBAR -->
@@ -32,93 +34,131 @@
             <div class="navbar-end">
                 <a class="navbar-item" href="login.html">Entrar</a>
                 <div class="navbar-item">
-                    <a class="button btn-cadastrar" href="cadastro.html" >Cadastrar</a>
+                    <a class="button btn-cadastrar" href="cadastro.html">Cadastrar</a>
                 </div>
             </div>
         </div>
     </nav>
 
+    <section class="section">
+        <div class="container">
 
-<section class="section">
-    <div class="container">
-
-        <!-- HERO + SIDEBAR -->
-        <div class="columns">
             <!-- HERO -->
-            <div class="column">
-                <div class="featured-card big">
-                    <img src="images/melhoresCart.jpg" alt="Cartão">
-                    <div class="overlay">
-                        <span class="tag hero-tag">CARTÃO</span>
-                        <h2>Os melhores cartões de crédito em 2026</h2>
-                        <p>Compare benefícios, cashback e anuidade.</p>
+            <div class="columns">
+                <div class="column">
+                    <div class="featured-card big">
+                        <img src="images/melhoresCart.jpg" alt="Cartão">
+                        <div class="overlay">
+                            <span class="tag hero-tag">CARTÃO</span>
+                            <h2>Os melhores cartões de crédito em 2026</h2>
+                            <p>Compare benefícios, cashback e anuidade.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- NOTÍCIAS -->
+            <div class="columns ultimas-noticias">
+
+                <div class="column is-8">
+
+                    <h3 class="section-title">Últimas notícias</h3>
+
+                    <!-- ARTICLE 1 -->
+                    <div class="article"
+                        onclick="abrirModal('Como aumentar o limite do cartão','Aprenda como os bancos analisam o seu comportamento financeiro. Pagar contas em dia, movimentar a conta e usar o cartão com frequência podem ajudar no aumento do limite.','images/aumentarLimit.jpg')">
+
+                        <img src="images/aumentarLimit.jpg" alt="">
+
+                        <div class="article-content">
+                            <span class="tag">DICAS</span>
+                            <h3>Como aumentar o limite do cartão</h3>
+                            <p>Aprenda como os bancos analisam seu perfil.</p>
+                        </div>
+                    </div>
+
+                    <!-- ARTICLE 2 -->
+                    <div class="article"
+                        onclick="abrirModal('Golpes com cartão em 2026','Os golpes digitais aumentaram muito. Nunca compartilhe códigos, senhas ou dados pessoais. Utilize autenticação em dois fatores sempre que possível.','images/golpesCart.jpg')">
+
+                        <img src="images/golpesCart.jpg" alt="">
+
+                        <div class="article-content">
+                            <span class="tag">SEGURANÇA</span>
+                            <h3>Golpes com cartão em 2026</h3>
+                            <p>Veja como se proteger das novas fraudes.</p>
+                        </div>
+                    </div>
+
+                    <!-- ARTICLE 3 -->
+                    <div class="article"
+                        onclick="abrirModal('Erros comuns no cartão','Muitas pessoas gastam além do limite e esquecem de acompanhar a fatura. Organização financeira é essencial para evitar dívidas.','images/errosComun.jpg')">
+
+                        <img src="images/errosComun.jpg" alt="">
+
+                        <div class="article-content">
+                            <span class="tag">ALERTA</span>
+                            <h3>Erros comuns no cartão</h3>
+                            <p>Evite dívidas com essas dicas simples.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ANÁLISES -->
+                <div class="column is-4">
+
+                    <h3 class="section-title">Análises</h3>
+
+                    <div class="news-card">
+                        <img src="images/cartaoINV.jpg" alt="">
+                        <div class="content">
+                            <span class="tag">ANÁLISE</span>
+                            <h3>Cartão sem anuidade vale a pena?</h3>
+                        </div>
+                    </div>
+
+                    <div class="news-card mt-4">
+                        <img src="images/cashBack.jpg" alt="">
+                        <div class="content">
+                            <span class="tag">ECONOMIA</span>
+                            <h3>Cashback vs milhas</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+    </section>
 
-        <!-- ÚLTIMAS NOTÍCIAS + ANÁLISES (MAIS PARA CIMA) -->
-        <div class="columns ultimas-noticias">
-            <!-- ÚLTIMAS NOTÍCIAS -->
-            <div class="column is-8">
-                <h3 class="section-title">Últimas notícias</h3>
+    <!-- MODAL -->
+    <div class="modal-custom" id="modal">
 
-                <div class="article">
-                    <img src="images/aumentarLimit.jpg" alt="">
-                    <div class="article-content">
-                        <span class="tag">DICAS</span>
-                        <h3>Como aumentar o limite do cartão</h3>
-                        <p>Aprenda como os bancos analisam seu perfil.</p>
-                    </div>
-                </div>
+        <div class="modal-box">
 
-                <div class="article">
-                    <img src="images/golpesCart.jpg" alt="">
-                    <div class="article-content">
-                        <span class="tag">SEGURANÇA</span>
-                        <h3>Golpes com cartão em 2026</h3>
-                        <p>Veja como se proteger das novas fraudes.</p>
-                    </div>
-                </div>
+            <span class="close-modal" onclick="fecharModal()">&times;</span>
 
-                <div class="article">
-                    <img src="images/errosComun.jpg" alt="">
-                    <div class="article-content">
-                        <span class="tag">ALERTA</span>
-                        <h3>Erros comuns no cartão</h3>
-                        <p>Evite dívidas com essas dicas simples.</p>
-                    </div>
-                </div>
+            <img id="modal-img" src="" alt="">
+
+            <div class="modal-content-custom">
+                <span class="tag">NOTÍCIA</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-text"></p>
             </div>
 
-            <!-- ANÁLISES -->
-            <div class="column is-4">
-                <h3 class="section-title">Análises</h3>
-
-                <div class="news-card">
-                    <img src="images/cartaoINV.jpg" alt="">
-                    <div class="content">
-                        <span class="tag">ANÁLISE</span>
-                        <h3>Cartão sem anuidade vale a pena?</h3>
-                    </div>
-                </div>
-
-                <div class="news-card mt-4">
-                    <img src="images/cashBack.jpg" alt="">
-                    <div class="content">
-                        <span class="tag">ECONOMIA</span>
-                        <h3>Cashback vs milhas</h3>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </div>
-</section>
 
-<!-- FOOTER -->
-<div class="footer">
-    <p>PROJETO TI03 © 2026 - Conteúdo educativo financeiro</p>
-</div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>PROJETO TI03 © 2026 - Conteúdo educativo financeiro</p>
+    </div>
+
+    <script src="js/cartao.js"></script>
+
 </body>
+
 </html>
